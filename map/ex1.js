@@ -21,8 +21,15 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
+function getStringsLength(world) {
+  let tableauTailleMots = world.map(mots => {
+    let phrase = mots + ' contains ' + mots.length + ' characters';
+    return phrase;
+  })
+  return tableauTailleMots;
 }
+  
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1

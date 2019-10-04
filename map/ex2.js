@@ -43,6 +43,17 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  let nourritureEntre = foods.map(alliment => {
+    if (alliment.isVegetarian === true) {
+      let phraseSortie = alliment.food + ' is suitable for vegetarians'
+      return phraseSortie; 
+    } else { 
+      let phraseSortie = alliment.food + ' is not suitable for vegetarians'
+      return phraseSortie;
+    }
+  }
+  )
+  return nourritureEntre;  
 }
 
 

@@ -22,8 +22,12 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
-
 function keepStarks(names) {
+  let namesSplits = names.filter((Stark) => {
+    let StarkTableau = Stark.split(' ');
+    return StarkTableau[1] === 'Stark' 
+  })
+  return namesSplits;
 }
 
 // Ne pas modifier l'export
